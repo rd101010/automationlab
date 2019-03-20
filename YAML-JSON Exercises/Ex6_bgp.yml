@@ -1,0 +1,18 @@
+# Exercise 6 BGP neighbor list
+---
+bgp:
+- neighbor: 10.11.12.13
+  description: YYC WAN
+  asn: 60532
+  state: present
+  policy: MyMap
+- neighbor: 10.11.13.13
+  description: YYC WAN
+  asn: 60532
+  state: present
+  policy: MyMap10
+- neighbor: 10.11.14.13
+  description: YYC WAN
+  asn: 60532
+  state: absent
+  policy: MyMap10

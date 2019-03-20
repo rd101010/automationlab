@@ -1,0 +1,11 @@
+{# Jinja2 Exercises #}
+{# Ex 5 #}
+
+{% for u in users %}
+
+user {{ u.username }} password {{ u.password }}
+user {{ u.username }} privilege {{ u.privilege|default(2) }}
+{% if u.autocommand is defined %}
+user {{ u.username }} autocommand {{ u.autocommand }}
+{% endif %}
+{% endfor %}

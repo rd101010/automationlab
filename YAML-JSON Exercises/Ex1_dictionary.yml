@@ -1,0 +1,12 @@
+# Exercise 1 _ Dictionary
+---
+Hostname: yyc-sw1
+Loopback: 1.2.3.1
+Maxint: 5
+Banner: |
+        Warning this is a private computing system. 
+        Unauthorized access is prohbited. If your activities
+        show evidence of illegal activity, results will be sent to law enforcement.
+        All system activity is logged. By using or continuing
+        to use this system you consent to being
+        monitored. 

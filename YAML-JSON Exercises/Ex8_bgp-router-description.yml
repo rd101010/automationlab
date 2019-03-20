@@ -1,0 +1,35 @@
+# Exercise 8 BGP router description
+---
+- hostname: 10.11.12.13
+  description: YYC WAN
+  loopback: 11.11.00.10
+  asn: 60532
+  Banner: |
+          Warning this is a private computing system. 
+          Unauthorized access is prohbited. If your activities
+          show evidence of illegal activity, results will be sent to law enforcement.
+          All system activity is logged. By using or continuing
+          to use this system you consent to being
+          monitored. 
+  interfaces: 
+    - GigabitEthernet0/0: { 192.168.0.1/24 }
+    - GigabitEthernet0/1: { 192.168.2.1/24 }
+    - GigabitEthernet0/2: { 192.168.3.1/24 }
+  neighbor: 10.11.12.13
+    - description: YYC WAN
+      asn: 60532
+      state: present
+      policy: MyMap
+      prefixes: [ 10.10.10.0/24 ]
+  neighbor: 10.11.13.13
+    - description: YYC WAN
+      asn: 60532
+      state: present
+      policy: MyMap10
+      prefixes: [ ip: 10.10.20.0/24 ]
+  neighbor: 10.11.14.13
+    - description: YYC WAN
+      asn: 60532
+      state: absent
+      policy: MyMap10
+      prefixes: [ ip: 10.10.30.0/24, 10.10.40.0/24 ]

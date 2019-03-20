@@ -1,0 +1,8 @@
+# Exercise 4 _ List of usernames & passwords
+---
+- username: bobedwards
+  password: changeme
+- username: janedoe
+  password: dontchangeme
+- username: johnsmith
+  password: crafTb33r

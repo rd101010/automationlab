@@ -1,0 +1,20 @@
+# Exercise 7 BGP neighbor list with prefixes
+---
+- description: YYC WAN
+  ip address : 10.11.12.13
+  asn: 60532
+  state: present
+  policy: MyMap
+  prefix: [ ip: 10.10.10.0/24 ]
+- description: EDM WAN
+  ip address: 10.11.13.13
+  asn: 60532
+  state: present
+  policy: MyMap10
+  prefix: [ ip: 10.10.20.0/24 ]
+- description: LTH WAN
+  ip address: 10.11.14.13
+  asn: 60532
+  state: absent
+  policy: MyMap10
+  prefix: [ ip: 10.10.30.0/24 ]

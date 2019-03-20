@@ -1,0 +1,4 @@
+Description of automation lab
+Linux 16.04 server with virtualbox installed
+Multiple VM's created including Tools [includes Ansible, python, etc]
+VM's created with Cumulus Linux VX, Centos & Cisco CS1000v

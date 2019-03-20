@@ -1,0 +1,8 @@
+# Exercise 2 _ Dictionary
+---
+Hostname: yyc-sw1
+Loopback: 1.2.3.1
+Interfaces:
+  - GigabitEthernet0/0
+  - GigabitEthernet0/1
+  - GigabitEthernet0/2

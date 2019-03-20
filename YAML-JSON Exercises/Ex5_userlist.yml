@@ -1,0 +1,19 @@
+# Exercise 5 list of users
+---
+- List of users:
+- username: bedwards
+  password: byteme
+  privilege: admin
+  autocommand:
+- username: jsmith
+  password: dontbyteme
+  privilege: poweruser
+  autocommand: terminal.sh
+- username: adarling
+  password: 1234pwd
+  privilege:
+  autocommand:
+- username: jpeplinksi
+  password: h0ckeY
+  privilege: admin
+  autocommand:
