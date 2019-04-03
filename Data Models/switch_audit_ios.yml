@@ -1,0 +1,20 @@
+---
+# This playbook will display version information about the devices it scans
+- name: Building inventory
+  hosts: lab-sw
+  gather_facts: False
+  connection: local
+
+  vars:
+    desired_ios_version: "15.0(2)SE11"
+
+  tasks:
+    - name: Gathering IOS facts
+      ios_facts:
+      register: all_facts
+    - name: create HTML report
+      template:
+        src: report-ios.j2
+        dest: /home/user/inventory_report_ios.html
+      delegate_to: localhost
+#      run_once: true
