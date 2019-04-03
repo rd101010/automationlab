@@ -1,0 +1,11 @@
+Get a list of serial numbers from Cisco ios based switches
+format into a columnized page and highlight any hosts that differ from the standard.
+
+Steps:
+1. Test retrieving facts from hosts using a simple playbook first
+2. Confirm that results are what I am looking format
+3. Build a jinja template to format the data into a readable format
+4. Test that the data is formatted correctly
+5. Make any required adjustments
+6. Add the step to create the html file and push it to test webserver 
+7. Validate final result
