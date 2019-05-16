@@ -1,0 +1,16 @@
+---
+# Fabric.yml
+connections:
+- hub: R1
+  conn: Ethernet0/0
+  spoke: R2
+  conn: Ethernet0/0
+  spoke: R3
+  conn: Ethernet0/0
+  spoke: R4
+  conn: Ethernet0/0
+  core: MPLS
+  conn: Ethernet0/0
+  conn2: Ethernet0/1
+  conn3: Ethernet0/2
+  conn4: Ethernet0/3

@@ -1,0 +1,21 @@
+---
+# R4.yml
+hostname: "R4"
+loopback:
+  0:
+    ip: 4.4.4.4
+  10:
+    ip: 44.44.44.44
+MGMT:
+  interface: 'Ethernet1/0'
+  ip: 192.168.100.104
+WAN:
+  0:
+    interface: 'Ethernet0/0'
+    ip: 45.45.45.4
+    subnet: 255.255.255.0
+DMVPN:
+  0:
+    interface: 'Tunnel100'
+    ip: 10.1.1.4
+AS: 65004

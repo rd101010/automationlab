@@ -1,0 +1,21 @@
+---
+# R1.yml
+hostname: "R1"
+loopback:
+  0:
+    ip: 1.1.1.1
+  10:
+    ip: 11.11.11.11
+MGMT:
+  interface: 'Ethernet1/1'
+  ip: 192.168.100.101
+WAN:
+  0:
+    interface: 'Ethernet0/0'
+    ip: 15.15.15.1
+    subnet: 255.255.255.0
+DMVPN:
+  0:
+    interface: 'Tunnel100'
+    ip: 10.1.1.1
+AS: 65001

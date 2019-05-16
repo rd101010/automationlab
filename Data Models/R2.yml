@@ -1,0 +1,21 @@
+---
+# R2.yml
+hostname: "R2"
+loopback:
+  0:
+    ip: 2.2.2.2
+  10:
+    ip: 22.22.22.22
+MGMT:
+  interface: 'Ethernet0/2'
+  ip: 192.168.100.102
+WAN:
+  0:
+    interface: 'Ethernet0/0'
+    ip: 25.25.25.2
+    subnet: 255.255.255.0
+DMVPN:
+  0:
+    interface: 'Tunnel100'
+    ip: 10.1.1.2
+AS: 65002

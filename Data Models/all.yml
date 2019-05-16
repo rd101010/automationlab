@@ -1,0 +1,8 @@
+---
+# All.yml
+tunnel:
+  100:
+    key: 100
+    auth: cisco
+    multi: 1.1.1.1
+    NHS: 10.1.1.1
